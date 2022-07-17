@@ -153,11 +153,41 @@ span {
   padding: 0px;
 }
 
+/* Estilo about me */
+#container-about-me {
+  background-color: #fbfee5;
+  margin: auto;
+  padding: 30px;
+  text-align: center;
+}
+
+#div-container-about-me {
+  margin: auto;
+  width: 50%;
+}
+
+#about-me {
+  color: #fc6e3d;
+  font-size: 2em;
+  padding: 10px;
+  text-align: center;
+}
+
+#about-me p {
+  color: #181818;
+}
+
 /* Estilo home */
 
 @media (max-width:906px) {
   #container-home {
     flex-direction: column-reverse;
+  }
+
+  /* Estilo about me */
+  #div-container-about-me {
+    margin: unset;
+    width: auto;
   }
 
   @media (max-width: 813px) {
