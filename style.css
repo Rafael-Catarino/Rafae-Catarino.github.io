@@ -177,14 +177,36 @@ span {
   color: #181818;
 }
 
-/* Estilo home */
+/* Estilo portifolio */
+#container-portfolio {
+  background-color: #181818;
+  color: #fbfee55d;
+  padding: 30px;
+  text-align: center;
+}
 
+.container-div-portfolio {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.div-portfolio {
+  background-color: #252628;
+  border-radius: 10px;
+  margin: 19px;
+  width: 306px;
+  height: 200px;
+}
+
+/* Estilo home */
 @media (max-width:906px) {
   #container-home {
     flex-direction: column-reverse;
   }
 
-  /* Estilo about me */
+  /* Estilo about me*/
   #div-container-about-me {
     margin: unset;
     width: auto;
