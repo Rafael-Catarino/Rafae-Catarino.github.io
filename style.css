@@ -15,6 +15,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 10px 0;
+  position: fixed;
   width: 100%;
 }
 
@@ -70,6 +71,7 @@ span {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 95px 0;
   width: 100%;
 }
 
@@ -156,8 +158,7 @@ span {
 /* Estilo about me */
 #container-about-me {
   background-color: #fbfee5;
-  margin: auto;
-  padding: 30px;
+  padding: 70px 10px;
   text-align: center;
 }
 
@@ -181,11 +182,11 @@ span {
 #container-portfolio {
   background-color: #181818;
   color: #fbfee55d;
-  padding: 30px;
+  padding: 80px 30px;
   text-align: center;
 }
 
-.container-div-portfolio {
+.div-container-portfolio {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -200,10 +201,17 @@ span {
   height: 200px;
 }
 
-/* Estilo home */
-@media (max-width:906px) {
+.div-portfolio a img {
+  border-radius: 10px;
+  margin: 5px;
+}
+
+
+@media (max-width:961px) {
+  /* Estilo home */
   #container-home {
     flex-direction: column-reverse;
+    padding: 65px 0px;
   }
 
   /* Estilo about me*/
@@ -212,65 +220,63 @@ span {
     width: auto;
   }
 
-  @media (max-width: 813px) {
-    /* Estilo header */
-    #header {
-      position: absolute;
-    }
+  /* Estilo header */
+  #header {
+    position: fixed;
+  }
 
-    #ul-link-header,
-    #header {
-      flex-direction: column;
-      align-items: unset;
-    }
+  #ul-link-header,
+  #header {
+    flex-direction: column;
+    align-items: unset;
+  }
 
-    #header-h2 {
-      padding: 8px 0px;
-    }
+  #header-h2 {
+    padding: 8px 0px;
+  }
 
-    li {
-      text-align: center;
-      padding: 15px;
-    }
+  li {
+    text-align: center;
+    padding: 15px;
+  }
 
-    #link-header-h2 {
+  #link-header-h2 {
+    margin: 20px;
+  }
+
+  .link {
+    padding: 20px 130px;
+  }
+
+  li:hover {
+    background-color: #fbfee55d;
+    cursor: pointer;
+  }
+
+  .nav-header-disappear {
+    display: none;
+  }
+
+  #header-button {
+    display: block;
+  }
+
+  @media (max-width: 460px) {
+    #div-home-text {
       margin: 20px;
-    }
-
-    .link {
-      padding: 15px 80px;
-    }
-
-    li:hover {
-      background-color: #fbfee55d;
-      cursor: pointer;
-    }
-
-    .nav-header-disappear {
-      display: none;
-    }
-
-    #header-button {
-      display: block;
+      width: 300px;
+      padding: 20px;
     }
 
     .div-home-photograph {
-      margin-top: 100px;
+      width: 350px;
     }
 
-    @media (max-width: 460px) {
-      #div-home-text {
-        margin: 20px;
-        width: 300px;
-        padding: 20px;
-      }
-      .div-home-photograph {
-        width: 350px;
-      }
-
-      .div-home-photograph2 {
-        width: 330px;
-      }
+    .div-home-photograph2 {
+      width: 330px;
+    }
+    .link {
+      padding: 20px 90px;
     }
   }
 }
