@@ -144,25 +144,25 @@ const createDivsLetterWrong = (l) => {
 const putImage = () => {
   switch (cont) {
     case 1:
-      img.src = `imagens/forca0${cont}.png`;
+      img.src = `fotos/forca0${cont}.png`;
       break;
     case 2:
-      img.src = `imagens/forca0${cont}.png`;
+      img.src = `fotos/forca0${cont}.png`;
       break;
     case 3:
-      img.src = `imagens/forca0${cont}.png`;
+      img.src = `fotos/forca0${cont}.png`;
       break;
     case 4:
-      img.src = `imagens/forca0${cont}.png`;
+      img.src = `fotos/forca0${cont}.png`;
       break;
     case 5:
-      img.src = `imagens/forca0${cont}.png`;
+      img.src = `fotos/forca0${cont}.png`;
       break;
     case 6:
-      img.src = `imagens/forca0${cont}.png`;
+      img.src = `fotos/forca0${cont}.png`;
       break;
     case 7:
-      img.src = `imagens/forca0${cont}.png`;
+      img.src = `fotos/forca0${cont}.png`;
       break;
   }
 }
@@ -170,7 +170,7 @@ const putImage = () => {
 const restartGame = () => {
   cont = 0;
   contCorrect = 0;
-  img.src = `imagens/forca0${cont}.png`;
+  img.src = `fotos/forca0${cont}.png`;
   divEndOfTheGame.remove();
   containerButtonLetter.innerHTML = '';
   containerCorrectLetter.innerHTML = '';
