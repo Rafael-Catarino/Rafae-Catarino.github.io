@@ -218,14 +218,23 @@ span {
 .div-portfolio {
   background-color: #252628;
   border-radius: 10px;
-  margin: 19px;
-  height: 200px;
-  width: 306px;
+  margin: 15px;
+  height: 250px;
+  width: 290px;
+}
+
+.div-portfolio a {
+  text-decoration: #6B6C63;
 }
 
 .div-portfolio a img {
   border-radius: 10px;
+  height: 190px;
   margin: 5px;
+}
+
+.p-portfolio {
+  color:#6B6C63;
 }
 
 #container-contact {
@@ -305,9 +314,8 @@ span {
 
 #div-message input {
   border-radius: 10px;
-  margin: 0px 5px;
-  padding: 10px;
-  width: 235px;
+  padding: 5px;
+  width: 230px;
 }
 
 

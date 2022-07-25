@@ -28,7 +28,7 @@ const createDivPortfolio = () => {
   return divPortfolio;
 }
 
-const createADivPortfolio = (i) => {
+const createAPortfolio = (i) => {
   const aDivPortfolio = document.createElement('a');
   aDivPortfolio.href = portfolio[i];
   aDivPortfolio.target = '_blank';
@@ -41,13 +41,22 @@ const createImgDivPortfolio = (i) => {
   return imgDivPortfolio;
 }
 
+const createPPortfolio = () => {
+  const pPortfolio = document.createElement('p');
+  pPortfolio.classList = 'p-portfolio';
+  pPortfolio.innerText = 'Feito com HTML, CSS e JavaScript puro';
+  return pPortfolio;
+}
+
 const constructDivPortfolio = () => {
   for(let i = 0; i < portfolio.length; i++) {
     const divPortfolio = createDivPortfolio();
-    const aDivPortfolio = createADivPortfolio(i); 
+    const aPortfolio = createAPortfolio(i); 
     const imgDivPortfolio = createImgDivPortfolio(i);
-    aDivPortfolio.appendChild(imgDivPortfolio);
-    divPortfolio.appendChild(aDivPortfolio);
+    const PPortfolio = createPPortfolio();
+    aPortfolio.appendChild(imgDivPortfolio);
+    aPortfolio.appendChild(PPortfolio);
+    divPortfolio.appendChild(aPortfolio);
     divContainerPortfolio.appendChild(divPortfolio);
   }
 }
