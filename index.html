@@ -23,7 +23,7 @@
         <li><a class="link" href="#container-home">Início</a></li>
         <li><a class="link" href="#container-about-me">Sobre</a></li>
         <li><a class="link" href="#container-portfolio">Projetos</a></li>
-        <li><a class="link" href="#">Contato</a></li>
+        <li><a class="link" href="#container-contact">Contato</a></li>
       </ul>
     </nav>
   </header>
@@ -39,14 +39,14 @@
         <div id="home-text-button">
           <a target="_blank" href="https://www.linkedin.com/in/rafael-dos-santos-catarino-ab9414206/">
             <div class="div-button">
-              <button class="button-home" id="linkedin"><img src="imagens/icons8-linkedin-64.png" alt="icone-linkedin">
+              <button class="button-home" id="linkedin"><img src="imagens/linkedin-64.png" alt="icone-linkedin">
                 <span class="span-button">LinkedIn</span></button>
             </div>
           </a>
 
           <a target="_blank" href="https://github.com/Rafael-Catarino">
             <div class="div-button">
-              <button class="button-home" id="github"><img src="imagens/icons8-github-64.png" alt=""><span
+              <button class="button-home" id="github"><img src="imagens/github-64.png" alt=""><span
                   class="span-button">GitHub</span></button>
             </div>
           </a>
@@ -56,7 +56,7 @@
         <div class="div-home-photograph2">
           <picture>
             <source media="(max-width: 460px)" srcset="imagens/rafael-removebg-preview3.png">
-            <img src="imagens/rafael-removebg-preview2.png" alt="">
+            <img src="imagens/rafael-removebg-preview2.png" alt="Foto do Rafael">
           </picture>
         </div>
       </div>
@@ -77,6 +77,10 @@
         <p>Gosto de: me exercitar ao ar livre, ler, fazer trilha, jogar, ver séries, animes e amo estudar e aprender
           coisas novas.</p>
       </div>
+
+      <div id="div-curriculum-vitae">
+        <a href="curriculo/curriculo.pdf" download="curriculo.pdf">Curriculum Vitae</a>
+      </div>
     </section>
 
     <!-- Portfolio -->
@@ -85,7 +89,55 @@
       <div class="div-container-portfolio">
       </div>
     </section>
+
+
   </main>
+
+  <!-- Contato -->
+  <footer id="container-contact">
+    <h2>Contatos</h2>
+    <div id="div-container-contact">
+      <div>
+        <div id="div-github">
+          <img id="img-github" src="imagens/github-48.png" alt="icone do github">
+          <a href="http://github.com/Rafael-Catarino" target="_blank"
+            rel="noopener noreferrer">github.com/Rafael-Catarino</a>
+        </div>
+        <div id="div-linkedin">
+          <img id="img-linkedin" src="imagens/linkedin-circundado-48.png" alt="icone do linkedin">
+          <a href="https://www.linkedin.com/in/rafael-dos-santos-catarino-ab9414206/" target="_blank"
+            rel="noopener noreferrer">linkedin/Rafael-Catarino</a>
+        </div>
+        <div id="div-whatsapp">
+          <img id="img-whatsapp" src="imagens/whatsapp.png" alt="icone do whatsapp">
+          <p>(21) 99246-1605</p>
+        </div>
+        <div id="div-email">
+          <img id="img-email" src="imagens/outlook.png" alt="icone do e-mail">
+          <p>rafaelscatarino@hotmail.com</p>
+        </div>
+      </div>
+      <div>
+        <form action="https://formsubmit.co/rafaelscatarino@hotmail.com" method="post">
+          <div id="div-message">
+            <label for="">E-mail:</label>
+            <input type="email" name="email" id="campus-email" placeholder="Digite seu E-mail" required>
+          </div>
+          <div id="div-message">
+            <label for="">Nome:</label>
+            <input type="text" name="nome" id="campus-nome" placeholder="Digite seu nome" required>
+          </div>
+          <div id="div-message">
+            <label for="">Conteudo:</label>
+            <textarea name="mensagem" id="compus-message" placeholder="Digite o texto" cols="29" rows="10" required></textarea>
+          </div>
+          <div id="div-message-button">
+            <button type="submit" id="message-button">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>

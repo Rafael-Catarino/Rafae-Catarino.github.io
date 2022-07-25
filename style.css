@@ -30,7 +30,7 @@
   display: none;
   font-size: 36px;
   position: absolute;
-  right: 20px;
+  right: 15px;
 }
 
 #header-button:hover {
@@ -38,16 +38,15 @@
 }
 
 #ul-link-header {
-  list-style: none;
   display: flex;
+  list-style: none;
   flex-direction: row;
 }
 
 #link-header-h2,
 .link {
   color: #fbfee5;
-  padding: 5px;
-  margin: 40px;
+  padding: 20px;
   text-decoration: none;
 }
 
@@ -77,8 +76,8 @@ span {
 
 #div-home-text {
   margin: 20px;
-  width: 340px;
   padding: 20px;
+  width: 340px;
 }
 
 #div-home-text h1 {
@@ -102,13 +101,15 @@ span {
 }
 
 #home-text-button a {
+  cursor: pointer;
+  margin: 10px;
   text-decoration: none;
 }
 
 .div-button {
   background-image: linear-gradient(to top, #C423FF, #1D6BFF);
   border-radius: 5px;
-  margin: 10px;
+  cursor: pointer;
   padding: 1px;
 }
 
@@ -118,6 +119,7 @@ span {
   border-radius: 5px;
   border: none;
   display: flex;
+  cursor: pointer;
   font-size: medium;
   justify-content: space-evenly;
   padding: 2px;
@@ -136,8 +138,8 @@ span {
   border-radius: 50%;
   margin: 20px;
   text-align: center;
-  width: 430px;
   padding: 0px;
+  width: 430px;
 }
 
 #linkedin img,
@@ -151,19 +153,22 @@ span {
   border-radius: 50%;
   margin: 5px;
   text-align: center;
-  width: 414px;
   padding: 0px;
+  width: 414px;
 }
 
 /* Estilo about me */
 #container-about-me {
+  align-items: center;
   background-color: #fbfee5;
+  display: flex;
+  flex-direction: column;
   padding: 70px 10px;
   text-align: center;
 }
 
 #div-container-about-me {
-  margin: auto;
+  margin: 5px;
   width: 50%;
 }
 
@@ -176,6 +181,23 @@ span {
 
 #about-me p {
   color: #181818;
+}
+
+#div-curriculum-vitae {
+  background-color: #fc6e3d;
+  box-shadow: 2px 2px 10px #181818;
+  ;
+  border: 1px solid #31140a;
+  border-radius: 5px;
+  margin: 30px;
+  width: 180px;
+}
+
+#div-curriculum-vitae a {
+  color: #31140a;
+  display: block;
+  padding: 13px;
+  text-decoration: none;
 }
 
 /* Estilo portifolio */
@@ -197,8 +219,8 @@ span {
   background-color: #252628;
   border-radius: 10px;
   margin: 19px;
-  width: 306px;
   height: 200px;
+  width: 306px;
 }
 
 .div-portfolio a img {
@@ -206,46 +228,114 @@ span {
   margin: 5px;
 }
 
+#container-contact {
+  background-color: #252628;
+  color: #fbfee5;
+  padding: 10px;
+  text-align: center;
+}
 
-@media (max-width:961px) {
-  /* Estilo home */
-  #container-home {
-    flex-direction: column-reverse;
-    padding: 65px 0px;
-  }
+#container-contact h2 {
+  margin: 15px;
+}
 
-  /* Estilo about me*/
-  #div-container-about-me {
-    margin: unset;
-    width: auto;
-  }
+#div-container-contact {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
+
+#div-container-contact div {
+  margin: 20px;
+}
+
+#div-linkedin,
+#div-github,
+#div-email,
+#div-whatsapp {
+  align-items: center;
+  display: flex;
+  font-size: smaller;
+  justify-content: flex-start;
+}
+
+#div-linkedin a,
+#div-github a,
+#div-email p,
+#div-whatsapp p {
+  color: #fbfee5;
+  margin: 20px;
+  text-decoration: none;
+}
+
+#img-linkedin,
+#img-github,
+#img-email,
+#img-whatsapp {
+  display: block;
+  margin: 5px;
+  width: 30px;
+}
+
+#div-message {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+#message-button {
+  background-color: #fc6e3d;
+  box-shadow: 2px 2px 10px #181818;
+  border: 1px solid #31140a;
+  border-radius: 5px;
+  padding: 5px;
+  width: 280px;
+}
+
+#div-message textarea {
+  border-radius: 10px;
+  margin: 0px 5px;
+  padding: 5px;
+}
+
+#div-message input {
+  border-radius: 10px;
+  margin: 0px 5px;
+  padding: 10px;
+  width: 235px;
+}
+
+
+@media (max-width: 906px) {
 
   /* Estilo header */
   #header {
+    padding: 0px;
     position: fixed;
   }
 
   #ul-link-header,
   #header {
-    flex-direction: column;
     align-items: unset;
+    flex-direction: column;
   }
 
   #header-h2 {
-    padding: 8px 0px;
+    padding: 10px 0px;
   }
 
   li {
     text-align: center;
-    padding: 15px;
-  }
-
-  #link-header-h2 {
-    margin: 20px;
   }
 
   .link {
-    padding: 20px 130px;
+    display: block;
+    padding: 15px;
   }
 
   li:hover {
@@ -259,24 +349,50 @@ span {
 
   #header-button {
     display: block;
+    margin: 1px;
   }
 
-  @media (max-width: 460px) {
-    #div-home-text {
-      margin: 20px;
-      width: 300px;
-      padding: 20px;
+  /* Estilo home */
+  #container-home {
+    flex-direction: column-reverse;
+    padding: 65px 0px;
+  }
+
+  /* Estilo about me*/
+  #div-container-about-me {
+    margin: unset;
+    width: auto;
+  }
+
+  @media (max-width: 845px) {
+
+    #div-container-contact {
+      align-items: center;
+      align-content: center;
+      display: flex;
+      flex-direction: column-reverse;
+      flex-wrap: wrap;
+      justify-content: center;
     }
 
-    .div-home-photograph {
-      width: 350px;
-    }
+    @media (max-width: 460px) {
+      #div-home-text {
+        margin: 20px;
+        padding: 20px;
+        width: 300px;
+      }
 
-    .div-home-photograph2 {
-      width: 330px;
-    }
-    .link {
-      padding: 20px 90px;
+      .div-home-photograph {
+        width: 350px;
+      }
+
+      .div-home-photograph2 {
+        width: 330px;
+      }
+
+      .link {
+        padding: 20px 90px;
+      }
     }
   }
 }
