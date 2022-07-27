@@ -133,6 +133,12 @@ span {
   -webkit-text-fill-color: transparent;
 }
 
+#linkedin img,
+#github img {
+  height: 23px;
+  width: 23px;
+}
+
 .div-home-photograph {
   background-color: #fc6e3d;
   border-radius: 50%;
@@ -140,12 +146,6 @@ span {
   text-align: center;
   padding: 0px;
   width: 430px;
-}
-
-#linkedin img,
-#github img {
-  height: 23px;
-  width: 23px;
 }
 
 .div-home-photograph2 {
@@ -234,9 +234,10 @@ span {
 }
 
 .p-portfolio {
-  color:#6B6C63;
+  color: #6B6C63;
 }
 
+/* estyle contact */
 #container-contact {
   background-color: #252628;
   color: #fbfee5;
@@ -374,6 +375,7 @@ span {
 
   @media (max-width: 845px) {
 
+    /* contact */
     #div-container-contact {
       align-items: center;
       align-content: center;
@@ -384,6 +386,13 @@ span {
     }
 
     @media (max-width: 460px) {
+
+      /* header */
+      .link {
+        padding: 20px 90px;
+      }
+
+      /* home */
       #div-home-text {
         margin: 20px;
         padding: 20px;
@@ -398,8 +407,10 @@ span {
         width: 330px;
       }
 
-      .link {
-        padding: 20px 90px;
+      /* contact */
+      #div-message textarea,
+      #div-message input {
+        width: 171;
       }
     }
   }
