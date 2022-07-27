@@ -12,11 +12,15 @@ const img = [
 
 const divContainerPortfolio = document.querySelector('.div-container-portfolio');
 const headerButton = document.querySelector("#header-button");
+const ulLinkHeader = document.querySelector("#ul-link-header");
 
 headerButton.addEventListener('click', () => {
   const navHeader = document.querySelector('#nav-header');
   if (navHeader.classList == 'nav-header-disappear') {
     navHeader.classList.remove('nav-header-disappear');
+    ulLinkHeader.addEventListener('click', () => {
+      navHeader.classList = 'nav-header-disappear';
+    });
   } else {
     navHeader.classList = 'nav-header-disappear';
   }
@@ -49,9 +53,9 @@ const createPPortfolio = () => {
 }
 
 const constructDivPortfolio = () => {
-  for(let i = 0; i < portfolio.length; i++) {
+  for (let i = 0; i < portfolio.length; i++) {
     const divPortfolio = createDivPortfolio();
-    const aPortfolio = createAPortfolio(i); 
+    const aPortfolio = createAPortfolio(i);
     const imgDivPortfolio = createImgDivPortfolio(i);
     const PPortfolio = createPPortfolio();
     aPortfolio.appendChild(imgDivPortfolio);
